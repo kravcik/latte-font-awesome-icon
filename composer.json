@@ -1,0 +1,32 @@
+{
+    "name": "kravcik/LatteFontAwesomeIcon",
+    "type": "library",
+    "description": "Simple {icon} macro for Latte, which allow short entry of font-awesome icons.",
+    "keywords": ["nette", "latte", "macro", "font awesome"],
+    "homepage": "https://github.com/kravcik/LatteFontAwesomeIcon",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/kravcik/LatteFontAwesomeIcon/issues"
+    },
+
+    "require": {
+        "php": "^8.1",
+        "latte/latte": "^3",
+        "nette/utils": "^3"
+    },
+
+    "require-dev": {
+        "tracy/tracy": "^2.6",
+		"nette/tester": "^2.2",
+		"nette/caching": "^3.0",
+		"nette/robot-loader": "^3.0",
+		"modul-is/coding-standard": "^3.0",
+		"phpstan/phpstan": "^1"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Kravcik\\LatteFontAwesomeIcon\\": "src/"
+        }
+    }
+}
