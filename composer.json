@@ -1,12 +1,12 @@
 {
-    "name": "kravcik/LatteFontAwesomeIcon",
+    "name": "kravcik/latte-font-awesome-icon",
     "type": "library",
     "description": "Simple {icon} macro for Latte, which allow short entry of font-awesome icons.",
     "keywords": ["nette", "latte", "macro", "font awesome"],
-    "homepage": "https://github.com/kravcik/LatteFontAwesomeIcon",
+    "homepage": "https://github.com/kravcik/latte-font-awesome-icon",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/kravcik/LatteFontAwesomeIcon/issues"
+        "issues": "https://github.com/kravcik/latte-font-awesome-icon/issues"
     },
 
     "require": {
