@@ -29,8 +29,9 @@ Parameters can be named or ordered by numeral indexes (see examples)
 1. `color` - color for current icon, generate `text-primary` for bootstrap colors, for others go `color-xxx`
 2. `size` - size for current icon, for numeric generate `fa-2x`, for strings `fa-lg`
 3. `fw` - fixed width `fa-fw` for current icon
-4. `style` - style for current icon (_fas|far|fal|fab etc._)
-5. `class` - icon name without `fa-`
+4. `element` - custom HTML element for current icon
+5. `style` - style for current icon (_fas|far|fal|fab etc._)
+6. `class` - custom class add for current HTML element
 
 ## Examples
 

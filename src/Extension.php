@@ -64,7 +64,7 @@ class Extension extends Latte\Extension
 	}
 
 
-	public static function render($name, ?string $color = null, ?int $size = null, ?bool $fw = null, ?string $style = null, ?string $class = null): Html
+	public static function render($name, ?string $color = null, ?int $size = null, ?bool $fw = null, ?string $element = null, ?string $style = null, ?string $class = null): Html
 	{		
 		$param = [];				
 		$param[] = $style ?: self::$defaultStyle;
@@ -90,9 +90,6 @@ class Extension extends Latte\Extension
 			$param[] = in_array($color, self::$colorClass, true) ? 'text-' . $color : 'color-' . $color;
 		}
 
-		return Html::el(self::$defaultElement)->class(implode(' ', $param));
+		return Html::el($element ?: self::$defaultElement)->class(implode(' ', $param));
 	}
-
-
-	
 }
