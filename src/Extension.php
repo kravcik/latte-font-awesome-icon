@@ -8,11 +8,11 @@ use Nette\Utils\Html;
 
 class Extension extends Latte\Extension
 {
-	public static string $defaultStyle;
+	public static string $defaultStyle = 'fal';
 
-	public static bool $defaultFixedWidth;
+	public static bool $defaultFixedWidth = true;
 
-	public static string $defaultElement;
+	public static string $defaultElement = 'span';
 
 	private static array $colorClass = [
 		'primary',
@@ -37,9 +37,20 @@ class Extension extends Latte\Extension
 		?string $defaultElement
 	)
 	{
-		self::$defaultStyle = $defaultStyle ?: 'fal';
-		self::$defaultFixedWidth = $defaultFixedWidth === false ? $defaultFixedWidth : true;
-		self::$defaultElement = $defaultElement ?: 'span';
+		if($defaultStyle)
+		{
+			self::$defaultStyle = $defaultStyle;
+		}
+		
+		if($defaultFixedWidth === false)
+		{
+			self::$defaultFixedWidth = false;
+		}
+		
+		if($defaultElement)
+		{
+			self::$defaultElement = $defaultElement;
+		}
 	}
 
 
