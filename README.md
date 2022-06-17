@@ -37,11 +37,17 @@ Parameters can be named or ordered by numeral indexes (see examples)
 Examples depends on default values, so we using default setting (fal, fw, span).
 
 `{icon star}` -> `<span class="fal fa-star fa-fw"></i>`
+
 `{icon star, primary}` -> `<span class="fal fa-star text-primary fa-fw"></span>`
+
 `{icon star, red}` -> `<span class="fal fa-star color-red fa-fw"></span>`
+
 `{icon star, null, lg}` -> `<span class="fal fa-star fa-lg fa-fw"></span>`
+
 `{icon star, yellow, 2}` -> `<span class="fal fa-star color-yellow fa-2x fa-fw"></span>`
+
 `{icon star, blue, size: 2, style: far}` -> `<span class="fal fa-star color-blue fa-2x"></span>`
+
 `{icon star, class: foo, color: green}` -> `<span class="fal fa-star color-green foo"></span>`
 
 
