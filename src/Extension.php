@@ -75,7 +75,7 @@ class Extension extends Latte\Extension
 	}
 
 
-	public static function render($name, ?string $color = null, ?int $size = null, ?bool $fw = null, ?string $element = null, ?string $style = null, ?string $class = null): Html
+	public static function render($name, ?string $color = null, int|string|null $size = null, ?bool $fw = null, ?string $element = null, ?string $style = null, ?string $class = null): Html
 	{		
 		$param = [];				
 		$param[] = $style ?: self::$defaultStyle;
