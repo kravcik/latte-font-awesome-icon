@@ -12,21 +12,26 @@
     "require": {
         "php": "^8.0",
         "latte/latte": "^3",
-        "nette/utils": "^3"
+        "nette/utils": "^4"
     },
 
     "require-dev": {
-        "tracy/tracy": "^2.6",
-		"nette/tester": "^2.2",
-		"nette/caching": "^3.0",
-		"nette/robot-loader": "^3.0",
-		"modul-is/coding-standard": "^3.0",
+        "tracy/tracy": "^2.9",
+		"nette/tester": "^2.4",
+		"nette/caching": "^3.2",
+		"nette/robot-loader": "^4",
+		"modul-is/coding-standard": "^4",
 		"phpstan/phpstan": "^1"
     },
 
     "autoload": {
         "psr-4": {
             "Kravcik\\LatteFontAwesomeIcon\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     }
 }
