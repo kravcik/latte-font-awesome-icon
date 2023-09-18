@@ -32,9 +32,9 @@ class Extension extends Latte\Extension
 
 	public function __construct
 	(
-		?string $defaultStyle,
-		?bool $defaultFixedWidth,
-		?string $defaultElement
+		?string $defaultStyle = null,
+		?bool $defaultFixedWidth = null,
+		?string $defaultElement = null
 	)
 	{
 		if($defaultStyle)
